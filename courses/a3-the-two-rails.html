@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 3 · The two rails: confidentiality and liability, as policy - learn ai consulting with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-consulting-with-phoebe</a> / Leader session 3 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Consulting with Phoebe · Leader track · Session 3 of 6</div>
+    <h1>The two <span class="accent">rails</span>: confidentiality and liability, as policy</h1>
+    <p class="sub">Every firm's AI policy is a reaction to somebody's incident. The only question is whose. It is dramatically cheaper to react to other firms' incidents than to your own, so this session tells two of them properly - Samsung's twenty days in spring 2023, and Deloitte Australia's October 2025 headline - and then builds the one-page policy those two stories imply. By the end you will have audited, or drafted, your own.</p>
+    <div class="chip-row">
+      <span class="chip level">🤝 Leader track</span>
+      <span class="chip audience">Partners + practice leads</span>
+      <span class="chip audience">The risk session</span>
+      <span class="chip time">45 min + self-study depth</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-22 · Two incidents, two rails</span>
+      <span class="a3" style="flex:4">22-40 · Policy anatomy</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Why this session is stories first, policy second</h2>
+    </div>
+    <p class="lede">Sessions a1 and a2 were about upside: the jagged-frontier gains and what they do to your pricing. This one is about the two ways AI ends a client relationship - a confidentiality leak and an unverified fact - and it works differently from most policy talks. We do not start from a template. We start from two fully told, verified incidents, because a policy whose stories you can retell is a policy your firm will actually follow. Each incident implies one rail; the two rails imply the five sections of the one-page policy; and the last eighteen minutes you spend on yours.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill inkpill">Sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      Both incidents told accurately enough to retell to your partners, the consumer-vs-enterprise training rule in one sentence, the five-section policy anatomy, and a marked-up draft or audit of your own firm's policy with its single biggest gap named.
+    </div>
+    <div class="callout tip">
+      <strong>Leader's framing</strong>
+      The consultant track drills these rails into hands - b3 builds the research discipline, b8 runs the confidentiality drill where the lab's gate caps an 87-scoring draft at 15 the moment a client name appears. Your job is different: make the policy real. That means budget for enterprise tooling, a named owner, and no exceptions for rainmakers.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: SAMSUNG ============ -->
+  <section class="section" id="samsung">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the confidentiality rail</span>
+      <h2>Incident one: Samsung, and the confidentiality rail <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">The verified story, in three beats. Samsung permitted ChatGPT for employees on March 11, 2023. Within roughly twenty days there were three leaks: semiconductor source code pasted in twice, and an internal meeting transcript pasted in for summarization. By May 2023 the company had banned generative AI on work devices company-wide. Nobody was malicious; the tool was permitted, the tasks were ordinary, and the material left the building anyway.</p>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The consulting translation: the material is the client's<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Samsung leaked its own property and could decide for itself how much that hurt. A consulting firm in the same position leaks its <strong>client's</strong> property - and trust is the product the firm sells. That is the whole translation, and it is why this rail outranks every productivity gain in the course: a firm that is 25% faster and untrusted is not a firm.</p>
+        <p>The timeline, compressed to the version you will retell:</p>
+        <table class="clean">
+          <tr><th>When</th><th>What happened</th></tr>
+          <tr><td>March 11, 2023</td><td>Samsung permits ChatGPT for employees</td></tr>
+          <tr><td>Within ~20 days</td><td>Three leaks: semiconductor source code (twice), an internal meeting transcript pasted for summarization</td></tr>
+          <tr><td>May 2023</td><td>Company-wide ban on generative AI on work devices</td></tr>
+        </table>
+        <p>The architecture answer has two layers. <strong>Layer one is contractual.</strong> Consumer tiers of both major vendors may train on your conversations unless you opt out - their own terms say so, and note that Anthropic's consumer tiers train unless opted out under its September 2025 terms. Enterprise and API tiers do NOT train on business data by default, contractually - OpenAI's enterprise privacy page and Anthropic's commercial terms both state it. The rule shape to memorize: <strong>consumer tiers may train unless opted out; commercial/enterprise/API tiers do not train by default.</strong></p>
+        <p><strong>Layer two is behavioral.</strong> Even inside approved enterprise tools, client-identifying material gets anonymized before it enters a prompt. The contract protects you from the vendor; anonymization protects you from everything else - screenshots, misrouted chats, the tool you forgot was consumer-tier.</p>
+        <div class="callout example"><span class="ex-pill">Real world</span>Notice what the Samsung employees did NOT do: nothing. They hid nothing, broke no rule, used a permitted tool for normal work - debugging code, summarizing a meeting. The failure was architectural, not moral. That observation returns in Part 3 as the no-blame incident path: a policy that punishes reporting guarantees you learn about your leak from the news instead.</div>
+      </div>
+    </details>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two lanes: consumer tier may train unless opted out, enterprise tier contractually does not - anonymize in both">
+        <style>
+          .rl3H { font: 800 16px Inter, sans-serif; fill: #FFFFFF; }
+          .rl3S { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+          .rl3T { font: 700 13.5px Inter, sans-serif; fill: #1A2230; }
+          .rl3X { font: 400 12.5px Inter, sans-serif; fill: #626E80; }
+          .rl3N { font: 600 14px Inter, sans-serif; fill: #26303D; }
+          .rl3L { stroke: #A8BDD9; stroke-width: 3; }
+        </style>
+        <defs>
+          <marker id="rl3Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L8,4.5 L0,9 z" fill="#A8BDD9"/>
+          </marker>
+        </defs>
+        <rect x="20" y="16" width="840" height="58" rx="12" fill="#122A4F"/>
+        <text class="rl3H" x="40" y="40">Behavioral layer: anonymize client-identifying material anyway</text>
+        <text class="rl3S" x="40" y="62">Applies on top of BOTH lanes - names, figures, anything identifying, out before the prompt</text>
+        <line class="rl3L" x1="220" y1="74" x2="220" y2="112" marker-end="url(#rl3Ah)"/>
+        <line class="rl3L" x1="660" y1="74" x2="660" y2="112" marker-end="url(#rl3Ah)"/>
+        <rect x="20" y="120" width="400" height="170" rx="14" fill="#FEF2F2"/>
+        <rect x="20" y="120" width="400" height="42" rx="14" fill="#991B1B"/>
+        <text class="rl3H" x="40" y="147">Consumer lane</text>
+        <text class="rl3T" x="40" y="188">May train on your chats unless opted out</text>
+        <text class="rl3X" x="40" y="212">The opt-out is behavioral: a setting someone</text>
+        <text class="rl3X" x="40" y="230">must remember to flip, per the vendors' terms.</text>
+        <text class="rl3X" x="40" y="254">Anthropic consumer tiers: train unless opted</text>
+        <text class="rl3X" x="40" y="272">out, under the September 2025 terms.</text>
+        <rect x="460" y="120" width="400" height="170" rx="14" fill="#EDF2F9"/>
+        <rect x="460" y="120" width="400" height="42" rx="14" fill="#1B3A6B"/>
+        <text class="rl3H" x="480" y="147">Enterprise / API lane</text>
+        <text class="rl3T" x="480" y="188">Does NOT train on business data by default</text>
+        <text class="rl3X" x="480" y="212">The guarantee is contractual, not behavioral:</text>
+        <text class="rl3X" x="480" y="230">OpenAI enterprise privacy page, Anthropic</text>
+        <text class="rl3X" x="480" y="248">commercial terms.</text>
+        <text class="rl3T" x="480" y="274">This is the lane your firm buys.</text>
+        <rect x="20" y="314" width="14" height="14" rx="3" fill="#8896A9"/>
+        <text class="rl3N" x="44" y="326">Rule shape: consumer may train unless opted out; enterprise/API do not train by default.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - two lanes, one anonymization layer on top of both</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why "opt out" is not a policy<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A firm could, in principle, run on consumer tools with every employee's opt-out toggled. Do not. A behavioral guarantee degrades one new hire, one reset device, one forgotten toggle at a time - and you will not know it degraded until the incident. A contractual guarantee degrades only if the contract changes, which is visible, negotiable, and somebody's job to watch. When your policy names approved tools in Part 3, the tier is the point: you are buying the contract, not the model.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: DELOITTE ============ -->
+  <section class="section" id="deloitte">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the liability rail</span>
+      <h2>Incident two: Deloitte Australia, and the liability rail <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">The verified story, told carefully because the details are the lesson. In October 2025, Deloitte Australia partially refunded the Australian government over a A$439,000 report after a Sydney University academic flagged fabricated references and a misattributed Federal Court quote. Deloitte attributed the errors to generative AI use it later disclosed - the revised report named Azure OpenAI GPT-4o. The refund was roughly A$97,000, the contract's final installment. Note the careful phrasing: Deloitte never said the whole report was AI-written, and nobody claimed the strategy was wrong.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>What it actually cost, and the rail it implies<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>What the incident cost was not the refund - A$97,000 is a rounding error for a big-four firm. It was <strong>the headline</strong>: a global brand attached, in public, to fabricated citations in government work. Every procurement officer who read that story now asks every consulting firm the same question, and your firm needs a better answer than "we tell people to be careful."</p>
+        <p>The rail: <strong>a named human owns every citation, quote, and number that reaches a client.</strong> AI-supplied facts are leads until source-verified - a lead is useful, a lead in a deliverable is a liability.</p>
+        <p>And the disclosure half is becoming structural: disclosure clauses in client and government contracts - stating whether and how generative AI was used - are the emerging norm. Deciding your firm's disclosure posture BEFORE a client asks is Part 3's section four; deciding it after they ask is called an apology.</p>
+        <div class="callout example"><span class="ex-pill">Real world</span>Run the counterfactual: same report, same AI use, but a citation audit before delivery catches the fabricated references and the misattributed quote. Cost of the audit: hours of a senior reviewer's time against a A$439,000 engagement. Instead the check was performed, for free, by an outside academic - which is the most expensive QA arrangement ever devised. The verification duty in your policy is that audit, moved inside the building.</div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Retelling the incident accurately<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Precision matters when you retell this story to your partners, because the exaggerated version is easier to dismiss. Deloitte never said the whole report was AI-written; it attributed specific errors to generative AI use it later disclosed, and the revised report named the tool. The strategy was not the finding at issue; the production details were. Told that way, the story is not "AI wrote a bad report" - it is "fluent, unverified production details survived every internal read and a client-side academic caught them." That version is harder to wave off, because every practice ships production details every week.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: POLICY ANATOMY ============ -->
+  <section class="section" id="anatomy">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the policy anatomy</span>
+      <h2>Policy anatomy: the one-page version <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Two incidents, two rails, five sections. This anatomy is field practice - the shape we see working, labeled honestly as such, not a regulation or an official standard. What makes it work is not the sections; it is that it fits on one page, names owners, and applies to everyone including the partner who bills the most.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The five sections every firm AI policy needs<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <tr><th>#</th><th>Section</th><th>What it says</th><th>Which incident it answers</th></tr>
+          <tr><td>1</td><td>Approved tools by tier</td><td>Named tools, named versions, which tier - and who approves additions</td><td>Samsung: "permitted" must mean a specific contract, not a category</td></tr>
+          <tr><td>2</td><td>Data rules</td><td>Client-identifying material anonymized even in approved tools; forbidden categories listed explicitly</td><td>Samsung: the behavioral layer on top of the contractual one</td></tr>
+          <tr><td>3</td><td>Verification duty</td><td>Who owns facts - a role, not a person - and the citation-audit gate before anything ships</td><td>Deloitte: a lead is not a fact until a human saw its source</td></tr>
+          <tr><td>4</td><td>Disclosure posture</td><td>What clients are told about AI use, and when - decided before they ask</td><td>Deloitte: disclosure arrived in the revised report, after the headline</td></tr>
+          <tr><td>5</td><td>Incident path</td><td>Who to call, no-blame reporting, response steps</td><td>Samsung: employees hid nothing, the tool permitted everything - reporting must be safe</td></tr>
+        </table>
+        <p>And the leader's clause that makes the other five real: <strong>no exceptions for rainmakers.</strong> The first time a top biller gets a pass on the data rules, the policy converts from a rail into a suggestion - and everyone watching knows it.</p>
+      </div>
+    </details>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 396" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The one-page AI policy: five stacked sections from approved tools to incident path">
+        <style>
+          .pa3N { font: 800 20px Inter, sans-serif; fill: #FFFFFF; }
+          .pa3T { font: 700 14px Inter, sans-serif; fill: #1A2230; }
+          .pa3X { font: 400 12px Inter, sans-serif; fill: #626E80; }
+          .pa3B { font: 600 14px Inter, sans-serif; fill: #26303D; }
+          .pa3L { stroke: #A8BDD9; stroke-width: 3; }
+        </style>
+        <defs>
+          <marker id="pa3Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L8,4.5 L0,9 z" fill="#A8BDD9"/>
+          </marker>
+        </defs>
+        <rect x="20" y="20" width="840" height="52" rx="10" fill="#EDF2F9"/>
+        <rect x="20" y="20" width="56" height="52" rx="10" fill="#122A4F"/>
+        <text class="pa3N" x="42" y="53">1</text>
+        <text class="pa3T" x="96" y="42">Approved tools by tier</text>
+        <text class="pa3X" x="96" y="62">Named and versioned; consumer vs enterprise stated; one owner approves additions</text>
+        <line class="pa3L" x1="48" y1="72" x2="48" y2="86" marker-end="url(#pa3Ah)"/>
+        <rect x="20" y="88" width="840" height="52" rx="10" fill="#F1F4F8"/>
+        <rect x="20" y="88" width="56" height="52" rx="10" fill="#1B3A6B"/>
+        <text class="pa3N" x="42" y="121">2</text>
+        <text class="pa3T" x="96" y="110">Data rules</text>
+        <text class="pa3X" x="96" y="130">Client-identifying material anonymized even in approved tools; forbidden categories listed</text>
+        <line class="pa3L" x1="48" y1="140" x2="48" y2="154" marker-end="url(#pa3Ah)"/>
+        <rect x="20" y="156" width="840" height="52" rx="10" fill="#EDF2F9"/>
+        <rect x="20" y="156" width="56" height="52" rx="10" fill="#1B3A6B"/>
+        <text class="pa3N" x="42" y="189">3</text>
+        <text class="pa3T" x="96" y="178">Verification duty</text>
+        <text class="pa3X" x="96" y="198">A named role owns every fact; the citation-audit gate runs before anything ships</text>
+        <line class="pa3L" x1="48" y1="208" x2="48" y2="222" marker-end="url(#pa3Ah)"/>
+        <rect x="20" y="224" width="840" height="52" rx="10" fill="#F1F4F8"/>
+        <rect x="20" y="224" width="56" height="52" rx="10" fill="#4A6B9C"/>
+        <text class="pa3N" x="42" y="257">4</text>
+        <text class="pa3T" x="96" y="246">Disclosure posture</text>
+        <text class="pa3X" x="96" y="266">What clients are told about AI use, and when - decided before they ask, not after</text>
+        <line class="pa3L" x1="48" y1="276" x2="48" y2="290" marker-end="url(#pa3Ah)"/>
+        <rect x="20" y="292" width="840" height="52" rx="10" fill="#EDF2F9"/>
+        <rect x="20" y="292" width="56" height="52" rx="10" fill="#4A6B9C"/>
+        <text class="pa3N" x="42" y="325">5</text>
+        <text class="pa3T" x="96" y="314">Incident path</text>
+        <text class="pa3X" x="96" y="334">Who to call, no-blame reporting - Samsung's staff hid nothing; reporting must be safe</text>
+        <rect x="20" y="366" width="14" height="14" rx="3" fill="#8896A9"/>
+        <text class="pa3B" x="44" y="378">One page, named owners, no exceptions for rainmakers - or it is a suggestion, not a policy.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the one-page policy, five sections top to bottom</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Where the rails get drilled into hands<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Policy on paper is half the system; reflexes are the other half, and those live in the consultant track. Session b3 builds the research discipline that treats AI-supplied facts as leads. Session b8 runs the confidentiality drill against a live gate: a draft that scores 87 on prose quality alone gets capped at 15 the instant client-identifying material appears in it, and the alarm lists the leaks. If you lead a practice, have your consultants run both - a team that has watched the gate slam once writes section 2 into its own muscle memory.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo">
+    <div class="section-kicker">
+      <span class="klabel">Everyone works</span>
+      <h2>Draft or audit your policy 📋 <span class="tag demo">★ 18 min · everyone works</span></h2>
+    </div>
+    <p class="lede">No lab widget on the leader track - your firm's policy is the exercise. If you have one, audit it; if you do not, a blank page and eighteen minutes produces a better draft than most firms currently run on.</p>
+    <div class="steps">
+      <div class="step"><p><strong>Get your firm's policy in front of you</strong> - or a blank page titled with today's date. Independents: your policy is one page for an audience of one, and you need it most, because no risk team is coming.</p></div>
+      <div class="step"><p><strong>Check it against the five sections.</strong> Approved tools by tier, data rules, verification duty, disclosure posture, incident path. Mark each: present, vague, or missing. "We use AI responsibly" counts as missing.</p></div>
+      <div class="step"><p><strong>Write the forbidden-data list for YOUR practice.</strong> Client names? Deal terms? Personal data? Board material? Be concrete - a list your newest analyst could apply at 11pm without asking anyone.</p></div>
+      <div class="step"><p><strong>Write the verification-duty sentence, naming a role, not a person.</strong> "The engagement manager owns every citation in the readout" survives staffing changes; "Sarah checks the facts" does not.</p></div>
+      <div class="step"><p><strong>Decide the disclosure posture in one sentence.</strong> What do clients get told about AI use, and when? Write the sentence you would be comfortable seeing quoted back to you in a procurement meeting.</p></div>
+      <div class="step"><p><strong>Note the single biggest gap and who owns closing it.</strong> One gap, one name, one date. A policy audit that ends without an owner is a reading exercise.</p></div>
+    </div>
+    <div class="callout tip">
+      <strong>✦ If you finish early</strong>
+      Retell one of today's two incidents, out loud, from memory - dates, numbers, what it cost. If you can tell the story, you can defend the policy to the partner who thinks it slows him down.
+    </div>
+  </section>
+
+  <!-- ============ EXERCISE ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Before next session</span>
+      <h2>Homework 📝 <span class="tag exercise">◐ 25 minutes</span></h2>
+    </div>
+    <ul>
+      <li><strong>Finish the policy draft or audit</strong> and put it in front of one other person at your firm - a fellow partner, your risk lead, or a skeptical senior. Their first objection is your section to rewrite.</li>
+      <li><strong>Confirm the tier of every tool your practice actually uses.</strong> Not the approved list - the real list, including the consumer app someone loves. Each one: consumer or enterprise/API? Unknown counts as consumer until proven otherwise.</li>
+      <li><strong>Read one primary source per rail:</strong> a contemporaneous Samsung report and a Deloitte Australia report, plus the OpenAI enterprise privacy page or Anthropic commercial terms. Session a4 assumes the incidents are yours to reference, not mine.</li>
+    </ul>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · The clean rule shape for AI tool tiers and training is...</p>
+      <button class="qopt" type="button">A · all tiers of the major vendors train on your data, so anonymization is the only protection</button>
+      <button class="qopt" type="button">B · consumer tiers may train unless opted out; commercial/enterprise/API tiers do not train by default</button>
+      <button class="qopt" type="button">C · enterprise tiers train on your data but delete it after thirty days</button>
+      <p class="qwhy">Consumer = behavioral opt-out someone must remember to flip (including Anthropic's consumer tiers since the September 2025 terms). Enterprise/API = contractual no-training by default, per the vendors' own pages. You anonymize anyway - the behavioral layer sits on top of both lanes.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · What actually cost Deloitte Australia in October 2025 was...</p>
+      <button class="qopt" type="button">A · wrong strategic recommendations that misled the government</button>
+      <button class="qopt" type="button">B · the roughly A$97,000 refund, a material financial hit</button>
+      <button class="qopt" type="button">C · unverified production details - fabricated references and a misattributed quote - reaching a client, and the headline that followed</button>
+      <p class="qwhy">Nobody claimed the strategy was wrong, and the refund was the contract's final installment - modest money. Fabricated citations in a government report, flagged by an outside academic, made the news. The rail: a named human owns every citation, quote, and number that ships.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The five sections of the one-page firm AI policy are...</p>
+      <button class="qopt" type="button">A · approved tools by tier, data rules, verification duty, disclosure posture, incident path</button>
+      <button class="qopt" type="button">B · vision statement, ethics principles, training calendar, vendor list, signature page</button>
+      <button class="qopt" type="button">C · approved tools, prompt library, model benchmarks, cost controls, usage dashboard</button>
+      <p class="qwhy">Two per rail plus the response plan: tools and data rules answer Samsung, verification and disclosure answer Deloitte, and the incident path answers both - with no-blame reporting, because Samsung's employees hid nothing and the tool permitted everything.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ SOURCES COVERED ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Coverage, honestly</span>
+      <h2>What this session covered from the official universe</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Samsung 2023 incident (Forbes, Bloomberg)</span><span class="note">permitted March 11, 2023; three leaks in ~20 days (source code x2, meeting transcript); May 2023 device ban</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Deloitte Australia 2025 incident (CFO Dive, OECD.AI)</span><span class="note">told with the careful phrasing: errors Deloitte attributed to generative AI use it later disclosed; ~A$97k of A$439k refunded</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Vendor data-handling terms (OpenAI enterprise privacy; Anthropic commercial + consumer terms)</span><span class="note">the consumer-vs-enterprise training rail, stated as the vendors state it</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Policy anatomy (five sections)</span><span class="note">field practice, labeled honestly - the shape that works, not a regulation or official standard</span></div>
+    </div>
+    <p>Certificates, videos, and graded assessments stay with the official providers - this course teaches the working core. Full source map in the repo's <em>materials/official-course-map.md</em>.</p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 3 cheat sheet</h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Incident one</b><span>Samsung permitted ChatGPT March 11, 2023; ~20 days, 3 leaks (source code x2, meeting transcript); May 2023 company-wide genAI ban on work devices.</span></div>
+      <div class="cheat-item"><b>The translation</b><span>Samsung leaked its own material. A firm leaks the CLIENT's - and trust is the product it sells.</span></div>
+      <div class="cheat-item"><b>Rail 1 rule shape</b><span>Consumer tiers may train unless opted out (Anthropic consumer too, since Sept 2025); commercial/enterprise/API tiers do not train by default. Anonymize anyway.</span></div>
+      <div class="cheat-item"><b>Incident two</b><span>Deloitte Australia, Oct 2025: A$439k government report; academic flagged fabricated references + misattributed Federal Court quote; ~A$97k refund; Azure OpenAI GPT-4o disclosed in the revised report.</span></div>
+      <div class="cheat-item"><b>Rail 2</b><span>A named human owns every citation, quote, and number that reaches a client. AI-supplied facts are leads until source-verified. The cost was the headline, not the refund.</span></div>
+      <div class="cheat-item"><b>The five sections</b><span>Approved tools by tier · data rules · verification duty · disclosure posture · incident path. One page, or nobody reads it.</span></div>
+      <div class="cheat-item"><b>The leader's clause</b><span>No exceptions for rainmakers. One pass for a top biller converts the policy into a suggestion.</span></div>
+      <div class="cheat-item"><b>Hands vs policy</b><span>The consultant track drills the rails (b3 research discipline, b8 gate caps an 87 draft at 15). The leader funds the tooling and holds the line.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 3 of 6 · learn-ai-consulting-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="a2-the-engagement-repriced.html">← Prev: The engagement, re-priced</a> &nbsp;·&nbsp; <a href="a4-quality-at-ai-speed.html">Next: Quality at AI speed →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

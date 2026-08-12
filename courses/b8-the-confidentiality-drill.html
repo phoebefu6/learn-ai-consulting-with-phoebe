@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultant session 8 · The confidentiality drill: the gate that outranks craft - learn ai consulting with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-consulting-with-phoebe</a> / Consultant session 8 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Consulting with Phoebe · Consultant track · Session 8 of 10</div>
+    <h1>The confidentiality drill: the gate that <span class="accent">outranks craft</span></h1>
+    <p class="sub">You have known the rule since session 1: client material stays out of untrusted tools. This session makes it a reflex. The lab's gate does not negotiate - a draft that would score 87 on craft caps at 15 the moment it names names, because that is exactly how it works in real life, except the cap is your firm's reputation. Today: the five kinds of leakage, the anonymization craft that preserves your analysis, and what to do when the gate fires anyway.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Consultant track</span>
+      <span class="chip audience">The rails session</span>
+      <span class="chip audience">Reflexes, not policy</span>
+      <span class="chip time">45 min + self-study depth</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-20 · Concepts</span>
+      <span class="a3" style="flex:5">20-40 · The gate</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Why craft cannot buy the gate open</h2>
+    </div>
+    <p class="lede">Every measure the scorer has taught you - answer first, quantified, so-whats, anchors - rewards putting MORE specifics on the page. This session teaches the one place that instinct inverts. The note in Cadence's data room from b1 - the large financial-services prospect, with names and a contract figure attached - is sitting in your notes, and week 5's pricing analysis genuinely benefits from it. The lab's gate already knows its contents, and the moment any of them enters a draft bound for an untrusted tool, no amount of craft matters. 87 on prose alone; capped at 15. The order of operations is the lesson: confidentiality first, craft second, always.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live lab - scores real text</span>
+      <span class="pill inkpill">Sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The five-category leakage taxonomy, the anonymization craft that keeps your analysis runnable while removing identity, the incident posture for when something slips anyway, and one round through the lab's gate - watching 87 points of craft get capped at 15, then restored by a single clean rewrite.
+    </div>
+    <div class="callout tip">
+      <strong>The house rule, at its sharpest</strong>
+      An AI-supplied fact is a lead until verified (b3); a deliverable is measured, not admired (b5). Today's addition outranks both: no client-identifying material enters an untrusted tool, ever, and identifying details get anonymized even in trusted ones. The gate runs BEFORE the scorer. So should you.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: WHAT COUNTS AS LEAKAGE ============ -->
+  <section class="section" id="leakage">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the taxonomy</span>
+      <h2>What counts as leakage <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">"Do not paste confidential stuff" fails as a rule because nobody thinks their paste is the confidential one. A taxonomy works better: five categories, each with a reason it identifies and a version that does not.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five leakage categories flowing toward a prompt window, blocked by the gate, with an anonymization detour lane">
+        <style>
+          .lk8T { font: 700 13px Inter, sans-serif; fill: #1A2230; }
+          .lk8X { font: 400 11.5px Inter, sans-serif; fill: #626E80; }
+          .lk8H { font: 800 13px Inter, sans-serif; fill: #FFFFFF; }
+          .lk8R { font: 800 13px Inter, sans-serif; fill: #991B1B; }
+          .lk8N { font: 600 14px Inter, sans-serif; fill: #26303D; }
+        </style>
+        <defs>
+          <marker id="lk8Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L8,4.5 L0,9 Z" fill="#A8BDD9"/>
+          </marker>
+        </defs>
+        <rect x="20" y="20" width="230" height="44" rx="10" fill="#EDF2F9"/>
+        <text class="lk8T" x="34" y="38">1 · Client identity</text>
+        <text class="lk8X" x="34" y="55">names, logos, descriptions</text>
+        <rect x="20" y="76" width="230" height="44" rx="10" fill="#EDF2F9"/>
+        <text class="lk8T" x="34" y="94">2 · People</text>
+        <text class="lk8X" x="34" y="111">names, emails, role+context</text>
+        <rect x="20" y="132" width="230" height="44" rx="10" fill="#EDF2F9"/>
+        <text class="lk8T" x="34" y="150">3 · Commercial terms</text>
+        <text class="lk8X" x="34" y="167">values, NDA pricing, stage</text>
+        <rect x="20" y="188" width="230" height="44" rx="10" fill="#EDF2F9"/>
+        <text class="lk8T" x="34" y="206">4 · Client's-client material</text>
+        <text class="lk8X" x="34" y="223">two trust relationships deep</text>
+        <rect x="20" y="244" width="230" height="44" rx="10" fill="#EDF2F9"/>
+        <text class="lk8T" x="34" y="262">5 · Internal material</text>
+        <text class="lk8X" x="34" y="279">board decks, unreleased nums</text>
+        <line x1="250" y1="42" x2="540" y2="130" stroke="#C6CEDA" stroke-width="2.5" marker-end="url(#lk8Ah)"/>
+        <line x1="250" y1="154" x2="540" y2="154" stroke="#C6CEDA" stroke-width="2.5" marker-end="url(#lk8Ah)"/>
+        <line x1="250" y1="266" x2="540" y2="178" stroke="#C6CEDA" stroke-width="2.5" marker-end="url(#lk8Ah)"/>
+        <rect x="556" y="40" width="24" height="230" rx="6" fill="#991B1B"/>
+        <text class="lk8H" transform="rotate(-90 568 155)" x="536" y="160">THE GATE</text>
+        <text class="lk8R" x="500" y="28">✕ capped at 15</text>
+        <rect x="650" y="90" width="210" height="110" rx="12" fill="#F1F4F8"/>
+        <rect x="650" y="90" width="210" height="36" rx="12" fill="#1B3A6B"/>
+        <text class="lk8H" x="666" y="113">Prompt window</text>
+        <text class="lk8X" x="666" y="150">enterprise tier + anonymized</text>
+        <text class="lk8X" x="666" y="167">material only - both layers,</text>
+        <text class="lk8X" x="666" y="184">always.</text>
+        <rect x="330" y="300" width="200" height="52" rx="12" fill="#EDF2F9" stroke="#4A6B9C" stroke-width="2"/>
+        <text class="lk8T" x="346" y="322">🧹 Anonymize first</text>
+        <text class="lk8X" x="346" y="340">identity out, shape kept</text>
+        <path d="M 135 288 L 135 326 L 322 326" fill="none" stroke="#A8BDD9" stroke-width="2.5" marker-end="url(#lk8Ah)"/>
+        <path d="M 530 326 L 755 326 L 755 208" fill="none" stroke="#A8BDD9" stroke-width="2.5" marker-end="url(#lk8Ah)"/>
+        <rect x="20" y="372" width="14" height="14" rx="3" fill="#8896A9"/>
+        <text class="lk8N" x="44" y="384">Any ONE category in a prompt to an untrusted tool is an incident. The detour lane is always open.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - five leakage categories, the gate, and the anonymization detour</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The taxonomy, row by row<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <tr><th>Category</th><th>Why it identifies</th><th>The anonymized version</th></tr>
+          <tr><td>Client identity</td><td>names, logos, and unmistakable descriptions ("the largest AI note-taker with a 5-seat cap") all point at one company</td><td>"a B2B SaaS client with strong team-level pull"</td></tr>
+          <tr><td>People</td><td>names and emails obviously; but role-plus-context identifies too - there is only one CRO of any given company</td><td>"a senior commercial stakeholder"</td></tr>
+          <tr><td>Commercial terms</td><td>contract values, pricing under NDA, and deal stage are the facts rivals want most - and often unique enough to identify both parties</td><td>"a contract in the low millions, late-stage"</td></tr>
+          <tr><td>Client's-client material</td><td>the Meridian Bank problem: Cadence's prospect is TWO trust relationships deep - the prospect never consented to your tooling at all</td><td>"a major financial-services prospect"</td></tr>
+      <tr><td>Internal material</td><td>board decks, unreleased numbers, and pre-announcement plans - material whose whole value is that it is not public yet</td><td>quote the shape ("board-level growth target"), never the artifact</td></tr>
+        </table>
+        <p>The Samsung story is the pattern to memorize: in spring 2023, Samsung permitted ChatGPT internally, and within about twenty days employees had pasted confidential source code (twice) and an internal meeting transcript into it - by May, generative AI was banned on company devices. Permitted tool, helpful intent, three leaks in twenty days. Nobody was malicious; everybody was productive. That is exactly why the rule has to live in your hands, not in a policy document.</p>
+        <div class="callout example"><span class="ex-pill">Real world</span>Note what the Samsung incident was made of: not spies, not negligence - engineers trying to fix code faster and summarize a meeting. The consulting version is worse in one specific way: the material you would paste belongs to your CLIENT, and in the Meridian case, to your client's client. Trust two relationships deep is the easiest thing in the world to spend and the hardest to buy back.</div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why "roles plus context" counts as a name<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The subtle row in the taxonomy is people. Everyone knows not to paste "Elena Voss"; fewer notice that "the CRO of our financial-services prospect, who joined from a payments company last year" is the same disclosure wearing a trench coat. Identification is a property of the COMBINATION, not the tokens: role + industry + timing can single out one human as surely as a surname. The working test: search your anonymized sentence in your head - how many real people could it describe? If the answer is "one," it is a name. This is the same logic privacy engineers call re-identification, and consultants get no exemption from arithmetic.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: ANONYMIZATION CRAFT ============ -->
+  <section class="section" id="anonymization">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the craft</span>
+      <h2>Anonymization that preserves the analysis <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Anonymization done badly deletes the analysis along with the identity - "a company had a problem" helps no one. Done well, it replaces identity and keeps the analytical shape: every relationship, magnitude, and constraint your reasoning needs survives the rewrite.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Before and after anonymization: identity replaced, analytical shape kept">
+        <style>
+          .an8H { font: 800 14px Inter, sans-serif; fill: #FFFFFF; }
+          .an8T { font: 700 13px Inter, sans-serif; fill: #1A2230; }
+          .an8X { font: 400 12px Inter, sans-serif; fill: #626E80; }
+          .an8R { font: 600 12px Inter, sans-serif; fill: #991B1B; }
+          .an8G { font: 600 12px Inter, sans-serif; fill: #1B3A6B; }
+          .an8N { font: 600 14px Inter, sans-serif; fill: #26303D; }
+        </style>
+        <defs>
+          <marker id="an8Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L8,4.5 L0,9 Z" fill="#A8BDD9"/>
+          </marker>
+        </defs>
+        <rect x="20" y="20" width="380" height="230" rx="12" fill="#FEF2F2"/>
+        <rect x="20" y="20" width="380" height="38" rx="12" fill="#991B1B"/>
+        <text class="an8H" x="36" y="45">Before - the gate fires</text>
+        <text class="an8T" x="36" y="86">"Meridian Bank's $4.2M contract,</text>
+        <text class="an8T" x="36" y="106">per Elena Voss and the Q3 board deck..."</text>
+        <text class="an8R" x="36" y="140">✕ client's client, named</text>
+        <text class="an8R" x="36" y="162">✕ a real person, named</text>
+        <text class="an8R" x="36" y="184">✕ unreleased contract value, exact</text>
+        <text class="an8R" x="36" y="206">✕ board material, cited</text>
+        <text class="an8X" x="36" y="234">Craft score irrelevant: capped at 15.</text>
+        <rect x="480" y="20" width="380" height="230" rx="12" fill="#EDF2F9"/>
+        <rect x="480" y="20" width="380" height="38" rx="12" fill="#1B3A6B"/>
+        <text class="an8H" x="496" y="45">After - gate open, analysis intact</text>
+        <text class="an8T" x="496" y="86">"a major financial-services prospect</text>
+        <text class="an8T" x="496" y="106">in late-stage talks (contract in the</text>
+        <text class="an8T" x="496" y="126">low millions)..."</text>
+        <text class="an8G" x="496" y="160">✓ identity replaced with category</text>
+        <text class="an8G" x="496" y="182">✓ person becomes a role reference</text>
+        <text class="an8G" x="496" y="204">✓ exact figure banded, magnitude kept</text>
+        <text class="an8X" x="496" y="234">Same reasoning runs. Nothing identifies.</text>
+        <line x1="400" y1="135" x2="472" y2="135" stroke="#A8BDD9" stroke-width="3" marker-end="url(#an8Ah)"/>
+        <rect x="20" y="284" width="14" height="14" rx="3" fill="#8896A9"/>
+        <text class="an8N" x="44" y="296">Two tests: could a rival identify the party? could your analysis still run? Pass both or rewrite.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - identity replaced, analytical shape kept</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The craft, and the architecture underneath it<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The move:</strong> replace identity, keep the analytical shape. "Meridian Bank's $4.2M contract" becomes "a major financial-services prospect in late-stage talks (contract in the low millions)" - the size, stage, and stakes your pricing analysis needs all survive; the identity does not. Then run the two tests: <strong>could a rival identify the party</strong> from your anonymized version? <strong>Could your analysis still run</strong> on what remains? Fail the first, you leaked; fail the second, you over-scrubbed.</p>
+        <p><strong>Role-based references:</strong> "the client's CRO" becomes "a senior commercial stakeholder" when even the role identifies - and at a company with one CRO, it always does. <strong>Numbers:</strong> round or band them when the exact figure is itself identifying; a $4.2M contract is findable, "low millions" is not, and your margin math almost never needed the second decimal anyway.</p>
+        <p><strong>The second layer is architectural:</strong> enterprise-tier tools. The clean rule from the course map: consumer tiers of the major vendors may train on your conversations unless you opt out; commercial, enterprise, and API tiers do not train by default - a contractual guarantee, not a vibe. And then anonymize anyway: defense in depth, because terms change, tabs get mixed up, and screenshots outlive settings pages.</p>
+        <div class="callout example"><span class="ex-pill">Real world</span>Terms do change - the course map notes Anthropic's consumer terms changed in 2025, after which consumer-tier chats train unless the user opts out, while commercial tiers kept no-training by default. Anyone whose habit was "this vendor never trains on chats" woke up with an outdated habit. Habits anchored to a vendor's current settings age; habits anchored to "anonymize before it leaves my notes" do not. That is the whole argument for the drill.</div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The drill for teams: the forbidden-list<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Individual reflexes decay under deadline pressure; shared artifacts do not. The team version of this session is a <strong>forbidden-list per engagement, written at kickoff, taped to the wall</strong> (or pinned in the channel): every client name, person, code name, contract figure, and internal artifact that must never enter a prompt - with the approved anonymization alongside each. Two virtues: writing it forces the team to decide what is sensitive BEFORE anyone is in a hurry, and checking a draft against a list is mechanical enough to do at 11pm, which is when leaks happen. The lab's gate is exactly this - a forbidden-list with a scorer attached. Steal the pattern.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: WHEN THE GATE FIRES ANYWAY ============ -->
+  <section class="section" id="incident">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers incident posture</span>
+      <h2>When the gate fires anyway <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Someone on your team will eventually paste the wrong thing - the Samsung employees were trying to be productive, not careless. The posture that limits the damage: no-blame reporting beats hidden leaks, every time.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The four steps, and the honest severity scale<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The four steps, in order: <strong>(1) stop</strong> - no more material into that session, no cleanup prompts, no "please forget that"; <strong>(2) tell the engagement lead</strong> - immediately, before the awkwardness compounds; <strong>(3) assess what tier and tool received it</strong> - enterprise with a no-training contract, or a consumer tier that may train on it; <strong>(4) document</strong> - what entered, when, which tool, which tier, who has been told.</p>
+        <p>One honest paragraph, because severity differs and pretending otherwise breeds hiding: a leak into an enterprise no-training tool is a <strong>policy breach to log</strong> - the contractual layer held, the behavioral layer failed, fix the habit. A leak into a consumer tool is an <strong>incident to escalate</strong> - the material may now sit in training pipelines you cannot recall. Different severity, same reporting duty. A team that punishes the report gets fewer reports, not fewer leaks - and the leak the lead never hears about is the one that ends up in the news.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo">
+    <div class="section-kicker">
+      <span class="klabel">Everyone runs the gate</span>
+      <h2>The gate ▶ <span class="tag demo">★ 18 min · everyone works</span></h2>
+    </div>
+    <p class="lede">Two buttons, one lesson. The lab loads a genuinely well-written draft - and the gate ignores every point of its craft. The score is always computed live from the text on the page; the leaks it lists are really there.</p>
+
+    <div id="consult-live" data-mode="confidential"></div>
+
+    <div class="steps">
+      <div class="step"><p><strong>1 · Press "Load the leaky draft" and read it.</strong> Craft-wise it is a 90s draft: answer first, quantified everywhere, so-whats on every bullet. Your b5-trained eye should admire it. That is the trap working.</p></div>
+      <div class="step"><p><strong>2 · Read the alarm.</strong> Capped at 15 regardless - 87 on prose alone. The gate lists exactly what it found: the client's client named, a real person, an unreleased contract value, board material. Four categories from Part 1, live on your screen.</p></div>
+      <div class="step"><p><strong>3 · Say the rule out loud.</strong> Any ONE of these in a prompt to an untrusted tool is a Samsung-shaped incident. Not the combination - any one.</p></div>
+      <div class="step"><p><strong>4 · Press "🧹 Anonymize, then use".</strong> Gate open, 87 restored. Read what changed: "a major financial-services prospect in late-stage talks" carries the analytical weight without the identity. The craft score was there all along - the gate just outranks it.</p></div>
+      <div class="step"><p><strong>5 · Write your own anonymization</strong> of one real client detail you know - on paper, not in the lab. Run the two tests: rival identification, analysis survival. This is the rep that makes it a reflex.</p></div>
+      <div class="step"><p><strong>6 · Say the takeaway sentence together:</strong> anonymize-then-prompt is the habit, enterprise-tier is the architecture, and you need both.</p></div>
+    </div>
+    <div class="callout tip">
+      <strong>✦ If you finish early</strong>
+      Start your engagement forbidden-list right now - it is homework anyway. Five minutes gets the obvious rows: client names, people, figures, code names, internal artifacts. The approved anonymization column is the part your teammates will actually thank you for.
+    </div>
+  </section>
+
+  <!-- ============ EXERCISE ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Before next session</span>
+      <h2>Homework 📝 <span class="tag exercise">◐ 20 minutes</span></h2>
+    </div>
+    <ul>
+      <li><strong>Write your engagement forbidden-list</strong> - every name, figure, and artifact from your current work that must never enter a prompt, with the approved anonymization alongside each.</li>
+      <li><strong>Anonymize three real details</strong> from your own notes, preserving analytical shape: identity replaced, magnitudes banded, both tests passed. Keep the before/after pairs - b10's capstone reuses the skill.</li>
+      <li><strong>Find your firm's incident-reporting path</strong> for AI data leaks - who gets told, how fast - or note honestly that it does not exist yet. Either finding is worth knowing before you need it.</li>
+    </ul>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · The five leakage categories are...</p>
+      <button class="qopt" type="button">A · passwords, financials, strategy, code, and personal opinions</button>
+      <button class="qopt" type="button">B · anything written down, anywhere, in any client context</button>
+      <button class="qopt" type="button">C · client identity, people, commercial terms, client's-client material, and internal material</button>
+      <p class="qwhy">The taxonomy beats "don't paste confidential stuff" because it is checkable row by row. The subtlest rows: people identified by role-plus-context, and the Meridian problem - material two trust relationships deep, from a party who never consented to your tooling.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Anonymization that preserves the analysis means...</p>
+      <button class="qopt" type="button">A · identity replaced with a category, roles generalized, identifying numbers banded - while the analytical shape still runs</button>
+      <button class="qopt" type="button">B · deleting every number and name until nothing specific remains</button>
+      <button class="qopt" type="button">C · replacing names with initials so the team still knows who is meant</button>
+      <p class="qwhy">"A major financial-services prospect in late-stage talks (contract in the low millions)" keeps size, stage, and stakes - the reasoning survives. Two tests: could a rival identify the party? could your analysis still run? Initials fail the first test; total deletion fails the second.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · Why anonymize even inside enterprise-tier tools with no-training contracts?</p>
+      <button class="qopt" type="button">A · because enterprise tools are secretly less secure than consumer ones</button>
+      <button class="qopt" type="button">B · defense in depth: terms change (consumer terms did in 2025), tools get mixed up, and a habit anchored to your own notes outlives any vendor's settings page</button>
+      <button class="qopt" type="button">C · no reason - anonymization is only needed in consumer tools</button>
+      <p class="qwhy">Enterprise-tier is the architecture; anonymize-then-prompt is the habit. The contractual layer is real (commercial/enterprise/API tiers do not train by default) - and you keep the behavioral layer anyway, because the layer you control is the one that never changes terms on you.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ SOURCES COVERED ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Coverage, honestly</span>
+      <h2>What this session covered from the official universe</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Samsung 2023 incident</span><span class="note">three leaks in ~20 days after permitting ChatGPT (source code x2, meeting transcript); genAI banned on company devices May 2023 - taught as the pattern, not a villain story</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Vendor data-handling terms (OpenAI enterprise privacy; Anthropic commercial + consumer)</span><span class="note">consumer tiers may train unless opted out; commercial/enterprise/API do not by default - including the 2025 Anthropic consumer-terms change as the terms-change lesson</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Anonymization craft - field practice, labeled honestly</span><span class="note">identity-out-shape-kept, role references, number banding, the two tests: working consulting hygiene, not published doctrine</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Simulator canon: the confidentiality gate</span><span class="note">leaky draft capped at 15 (87 on prose alone), anonymized rewrite restores 87 - the lab's scoring computed live from the displayed text</span></div>
+    </div>
+    <p>Certificates, videos, and graded assessments stay with the official providers - this course teaches the working core with a live scorer. Full source map in the repo's <em>materials/official-course-map.md</em>.</p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Consultant session 8 cheat sheet</h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The five categories</b><span>Client identity · people · commercial terms · client's-client material · internal material. Any ONE in an untrusted prompt is an incident.</span></div>
+      <div class="cheat-item"><b>The Samsung pattern</b><span>Permitted tool, helpful intent, three leaks in twenty days. Nobody malicious, everybody productive - that is why it needs to be a reflex.</span></div>
+      <div class="cheat-item"><b>The craft</b><span>Replace identity, keep the analytical shape: "Meridian Bank's $4.2M contract" becomes "a major financial-services prospect in late-stage talks (low millions)."</span></div>
+      <div class="cheat-item"><b>The two tests</b><span>Could a rival identify the party? Could your analysis still run? Pass both or rewrite.</span></div>
+      <div class="cheat-item"><b>Roles and numbers</b><span>"The client's CRO" becomes "a senior commercial stakeholder" when the role identifies; band exact figures that are themselves findable.</span></div>
+      <div class="cheat-item"><b>The architecture</b><span>Consumer tiers may train unless opted out; commercial/enterprise/API tiers do not by default. Anonymize anyway - defense in depth, terms change.</span></div>
+      <div class="cheat-item"><b>The gate canon</b><span>Leaky draft: 87 on prose, capped at 15. Anonymized: gate open, 87 restored. Confidentiality outranks craft, in the lab and in life.</span></div>
+      <div class="cheat-item"><b>Incident posture</b><span>Stop · tell the lead · assess the tier · document. Enterprise leak = breach to log; consumer leak = incident to escalate. Reporting duty is the same.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Consultant session 8 of 10 · learn-ai-consulting-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b7-client-communications.html">← Prev: Client communications</a> &nbsp;·&nbsp; <a href="b9-qa-and-readout.html">Next: QA and the readout →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+<script src="../assets/consult-live.js?v=1"></script>
+</body>
+</html>

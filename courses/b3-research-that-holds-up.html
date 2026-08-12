@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultant session 3 · Research that holds up: week 2, and the invented statistic - learn ai consulting with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-consulting-with-phoebe</a> / Consultant session 3 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Consulting with Phoebe · Consultant track · Session 3 of 10</div>
+    <h1>Research that <span class="accent">holds up</span></h1>
+    <p class="sub">Week 2 at Northbridge. The consulting cousin of the fake legal case is the invented statistic: plausible, well-formatted, and nonexistent. It arrives in perfect prose, with a decimal point for credibility, and week 2 - the research week - is when it tries to enter your engagement. This session is how it fails: a lead-not-fact rule, a source log with an owner column, and the confidentiality discipline that keeps client data out of your research prompts.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Consultant track</span>
+      <span class="chip audience">Week 2 of the engagement</span>
+      <span class="chip audience">The source-discipline session</span>
+      <span class="chip time">45 min + self-study depth</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-20 · Concepts</span>
+      <span class="a3" style="flex:5">20-40 · The source log</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Week 2: where the invented statistic hunts</h2>
+    </div>
+    <p class="lede">Your hypothesis tree from b2 just became three workstreams, and every one of them is hungry for facts: market size, rival pricing, procurement norms, retention benchmarks. AI can feed that hunger faster than any analyst in history - and a fraction of what it serves will be invented. Not maliciously, and not obviously: models produce what a market-size stat <em>looks like</em>, and what it looks like is exactly what a real one looks like. The defense is not sharper eyes. It is a process that assumes every AI-supplied fact is unverified until proven otherwise, and a working artifact - the source log - that makes the proof visible, dated, and owned.</p>
+    <p class="lede">The plan: the lead-not-fact rule and the anatomy of the incident that made it industry law (Part 1), the source log itself with worked rows (Part 2), and the confidentiality half of research discipline (Part 3). Then twenty minutes building the Cadence source log - including one deliberate encounter with an invented statistic, so you know the feeling before it costs you.</p>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A source log for the Cadence engagement with the 8 claims it needs, two claims sourced and logged for real, one firsthand experience of chasing an AI-invented number to nowhere, and the one-line label you will put under vendor-claimed figures forever after.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: LEAD NOT FACT ============ -->
+  <section class="section" id="lead-not-fact">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the rule</span>
+      <h2>The lead-not-fact rule <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">One sentence, applied without exception: <strong>an AI-supplied fact is a LEAD until a human has seen its source.</strong> Leads are valuable - a research tool that surfaces ten leads an hour is worth having. But a lead travels a fixed route before it can touch a deliverable, and there is exactly one shortcut, and the shortcut is the one that makes the news.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The fact's journey: AI output to lead, through the source-check gate, to fact or bin - with the red shortcut straight to the deliverable">
+        <defs>
+          <marker id="lf3Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L8,4.5 L0,9 z" fill="#A8BDD9"/>
+          </marker>
+          <marker id="lf3AhR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L8,4.5 L0,9 z" fill="#991B1B"/>
+          </marker>
+        </defs>
+        <style>
+          .lf3T { font: 700 14px Inter, sans-serif; fill: #1A2230; }
+          .lf3W { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .lf3S { font: 400 12px Inter, sans-serif; fill: #626E80; }
+          .lf3R { font: 700 12px Inter, sans-serif; fill: #991B1B; }
+          .lf3N { font: 600 14px Inter, sans-serif; fill: #26303D; }
+          .lf3L { stroke: #A8BDD9; stroke-width: 2.5; fill: none; marker-end: url(#lf3Ah); }
+          .lf3X { stroke: #991B1B; stroke-width: 3; fill: none; stroke-dasharray: 7 5; marker-end: url(#lf3AhR); }
+        </style>
+        <rect x="30" y="60" width="170" height="60" rx="10" fill="#EDF2F9" stroke="#4A6B9C"/>
+        <text class="lf3T" x="46" y="85">AI output</text>
+        <text class="lf3S" x="46" y="105">a plausible number</text>
+        <line class="lf3L" x1="200" y1="90" x2="244" y2="90"/>
+        <rect x="250" y="60" width="150" height="60" rx="10" fill="#4A6B9C"/>
+        <text class="lf3W" x="266" y="85">LEAD</text>
+        <text class="lf3S" x="266" y="105" fill="#EDF2F9">not yet a fact</text>
+        <line class="lf3L" x1="400" y1="90" x2="444" y2="90"/>
+        <rect x="450" y="50" width="180" height="80" rx="10" fill="#122A4F"/>
+        <text class="lf3W" x="466" y="76">Source-check gate</text>
+        <text class="lf3S" x="466" y="96" fill="#A8BDD9">a human sees the</text>
+        <text class="lf3S" x="466" y="112" fill="#A8BDD9">source itself</text>
+        <path class="lf3L" d="M 630 70 C 655 60, 655 48, 674 48"/>
+        <text class="lf3S" x="626" y="34">source found</text>
+        <path class="lf3L" d="M 630 110 C 655 120, 655 148, 674 148"/>
+        <text class="lf3S" x="626" y="176">no source</text>
+        <rect x="680" y="20" width="180" height="56" rx="10" fill="#EDF2F9" stroke="#1B3A6B"/>
+        <text class="lf3T" x="696" y="43">FACT</text>
+        <text class="lf3S" x="696" y="62">logged, with an owner</text>
+        <rect x="680" y="120" width="180" height="56" rx="10" fill="#F1F4F8" stroke="#8896A9"/>
+        <text class="lf3T" x="696" y="143">BIN</text>
+        <text class="lf3S" x="696" y="162">discarded, no regrets</text>
+        <path class="lf3L" d="M 862 48 C 876 48, 876 258, 866 258"/>
+        <rect x="680" y="230" width="180" height="56" rx="10" fill="#EDF2F9" stroke="#1B3A6B"/>
+        <text class="lf3T" x="696" y="253">Client deliverable</text>
+        <text class="lf3S" x="696" y="272">facts with owners only</text>
+        <path class="lf3X" d="M 115 120 C 115 300, 480 320, 674 268"/>
+        <text class="lf3R" x="150" y="330">the shortcut: an unverified number straight into the deliverable - this is the Deloitte path</text>
+        <rect x="30" y="356" width="14" height="14" rx="3" fill="#8896A9"/>
+        <text class="lf3N" x="54" y="368">Every lead takes the gate or the bin. The red route is faster, invisible in the draft, and priced in headlines.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the fact's journey: gate to fact or bin, and the red shortcut that makes the news</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why models invent numbers, and what one invoice looks like<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>No model looks up a market size the way you do. It generates the <em>shape</em> of a market-size statistic - a currency, a magnitude that fits the industry, a growth rate that rhymes with everything else it has read - and fills the shape plausibly. That is why invented numbers are not detectable by inspection: they are optimized, in a literal sense, to look right. The tell is never in the sentence. It is in the absence behind the sentence, which only a source-check reveals.</p>
+        <p>The invoice for skipping that check already exists. In October 2025, Deloitte Australia partially refunded the Australian government on a A$439,000 report after an academic found fabricated references and a misattributed court quote - errors Deloitte attributed to generative AI use it later disclosed. The refund was the small cost; the headline was the real price, because a consulting firm's product is the client's ability to trust what it hands over. Note what the incident did not require: bad strategy, wrong conclusions, or a hostile client. Unverified production details were enough.</p>
+        <div class="callout example"><span class="ex-pill">Real world</span>Read the Deloitte anatomy as a process diagram and it is exactly the red arrow above: AI-assisted material entered a deliverable without every reference passing a human source-check. The fix now standard across the industry is not "no AI" - it is the gate: a human sees the source of every citation, quote, and number before it ships, and their initials say so. That initials column is Part 2's whole reason to exist.</div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Leads are still worth collecting<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Do not let the rule curdle into refusing AI research help - that forfeits real gains for imaginary safety. Ten leads an hour, three of which survive the gate, still beats two hand-found facts in the same hour. The rule changes the accounting, not the tool: leads are free, facts are expensive, and only facts enter deliverables. Even retrieval-based tools that return citations get the same treatment - a citation is a lead to a source, not proof you have seen it. Click through. Every time.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE SOURCE LOG ============ -->
+  <section class="section" id="source-log">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the artifact</span>
+      <h2>The source log <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">The rule needs a place to live, and it is deliberately boring: a table. Every claim in the research pack gets a row - claim, source (link, title, page), date accessed, owner initials, confidence. If a number is in the deck but not in the log, that is a finding. If it is in the log without initials, that is a finding too.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The source log as a table: one verified row, one vendor-claim row">
+        <defs>
+          <marker id="sl3Ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L8,4.5 L0,9 z" fill="#A8BDD9"/>
+          </marker>
+        </defs>
+        <style>
+          .sl3H { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .sl3T { font: 700 12.5px Inter, sans-serif; fill: #1A2230; }
+          .sl3S { font: 400 12px Inter, sans-serif; fill: #626E80; }
+          .sl3P { font: 700 12px Inter, sans-serif; fill: #FFFFFF; }
+          .sl3N { font: 600 14px Inter, sans-serif; fill: #26303D; }
+          .sl3L { stroke: #A8BDD9; stroke-width: 2.5; fill: none; marker-end: url(#sl3Ah); }
+        </style>
+        <text class="sl3T" x="500" y="18">the two columns that keep you out of the news</text>
+        <path class="sl3L" d="M 560 24 C 580 34, 620 34, 648 40"/>
+        <path class="sl3L" d="M 700 24 C 716 30, 730 32, 740 38"/>
+        <rect x="20" y="44" width="840" height="40" rx="8" fill="#122A4F"/>
+        <text class="sl3H" x="36" y="69">Claim</text>
+        <text class="sl3H" x="336" y="69">Source</text>
+        <text class="sl3H" x="546" y="69">Date</text>
+        <text class="sl3H" x="636" y="69">Owner</text>
+        <text class="sl3H" x="712" y="69">Confidence</text>
+        <rect x="20" y="88" width="840" height="66" fill="#EDF2F9"/>
+        <text class="sl3T" x="36" y="112">Consultants with GPT-4 were</text>
+        <text class="sl3T" x="36" y="130">25.1% faster</text>
+        <text class="sl3S" x="336" y="112">HBS working paper</text>
+        <text class="sl3S" x="336" y="130">(SSRN 4573321)</text>
+        <text class="sl3S" x="546" y="121">2026-08-11</text>
+        <text class="sl3T" x="644" y="121">PF</text>
+        <rect x="712" y="105" width="80" height="26" rx="13" fill="#1B3A6B"/>
+        <text class="sl3P" x="726" y="122">Verified</text>
+        <rect x="20" y="158" width="840" height="66" fill="#FEF2F2"/>
+        <text class="sl3T" x="36" y="182">~30% time saved on info</text>
+        <text class="sl3T" x="36" y="200">gathering (McKinsey, on Lilli)</text>
+        <text class="sl3S" x="336" y="182">mckinsey.com - the</text>
+        <text class="sl3S" x="336" y="200">vendor's own claim</text>
+        <text class="sl3S" x="546" y="191">2026-08-11</text>
+        <text class="sl3T" x="644" y="191">PF</text>
+        <rect x="712" y="175" width="118" height="26" rx="13" fill="#991B1B"/>
+        <text class="sl3P" x="724" y="192">Vendor-claimed</text>
+        <text class="sl3S" x="712" y="218">label it in the deck</text>
+        <line x1="326" y1="44" x2="326" y2="224" stroke="#C6CEDA"/>
+        <line x1="536" y1="44" x2="536" y2="224" stroke="#C6CEDA"/>
+        <line x1="626" y1="44" x2="626" y2="224" stroke="#C6CEDA"/>
+        <line x1="702" y1="44" x2="702" y2="224" stroke="#C6CEDA"/>
+        <rect x="20" y="252" width="14" height="14" rx="3" fill="#8896A9"/>
+        <text class="sl3N" x="44" y="264">Every claim in the research pack gets a row. No row, no fact - and the owner initials are the Deloitte lesson.</text>
+        <text class="sl3S" x="44" y="288">Confidence takes three values: verified · vendor-claimed · estimate. Two of the three need a label in the deliverable.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the source log: one verified row, one vendor-claim row, five unforgiving columns</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Three source classes, and AI's proper research jobs<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Not all sources earn the same confidence. <strong>Primary</strong> - filings, transcripts, papers, the client's own data room - is what "verified" means; the log's first worked row ("consultants with GPT-4 were 25.1% faster - HBS working paper, verified") points at the study itself, not at coverage of it. <strong>Reputable secondary</strong> - major press - is acceptable with the outlet named. <strong>Vendor and self-reported</strong> numbers get logged, used, and <em>labeled in the deliverable</em>: "McKinsey claims ~30% time saved - vendor claim, label it" is the second worked row. The claim may be true; the point is the client can see whose claim it is. Estimates - yours or AI's - carry the same obligation.</p>
+        <p>Inside that discipline, AI has real research jobs. <strong>Coverage sweeps:</strong> "here are my 8 claims for the Cadence engagement - what angles am I missing?" catches the branch nobody staffed. <strong>Summarizing documents you supply:</strong> feeding it the actual filing and asking for the pricing section is inside the frontier, because the source is in your hand. <strong>Drafting search strategies:</strong> where to look, what terms, which source class each claim probably needs. And retrieval tools that return citations still get the log treatment - the citation goes in the source column only after a human has clicked it and seen the page.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Where deep-research technique lives<span class="mini">1 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>This session is the consulting discipline: what counts as a fact, who owns it, and how it is labeled when it reaches a client. The machinery of deep research - grounding techniques, retrieval pipelines, multi-source synthesis, research-agent workflows - lives in <a href="https://phoebefu6.github.io/learn-ai-research-with-phoebe/">learn-ai-research-with-phoebe</a>. Take that course to get faster at producing leads; keep this session's log to decide what survives the gate. The two compose: better machinery fills the log faster, and the log keeps the machinery honest.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: CONFIDENTIALITY ============ -->
+  <section class="section" id="confidentiality">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the other rail</span>
+      <h2>Confidentiality in research <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Week 2 has its own signature temptation: pasting client data into a research tool to "analyze the market like Cadence." The research question is legitimate; the paste is the incident. Session 1's rail, restated operationally for research week:</p>
+    <div class="callout tip">
+      <strong>The research-week version of Rail 1</strong>
+      Enterprise-tier tools only - the ones with contractual no-training terms. And anonymized inputs even there: "a B2B SaaS note-taker at ~$20 ARPU considering an enterprise tier" carries the full analytical weight of the question without the client's name attached. The model does not need to know it is Cadence to reason about seat caps and procurement cycles - and if the prompt works only with the name in it, the prompt was not about the market.
+    </div>
+    <div class="callout example"><span class="ex-pill">Real world</span>Samsung learned the paste lesson in about twenty days in 2023 - employees put confidential source code and a meeting transcript into ChatGPT, and by May generative AI was banned on company devices. The consulting version is worse because the pasted material belongs to your client. Session b8 makes this muscle memory with a drill: the lab's confidentiality gate reads your draft, and a leaky one - client names, contract figures, board material - is capped at a score of 15 no matter how brilliant the prose. The gate is fictional; the clause it simulates is in your firm's policy today.</div>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo">
+    <div class="section-kicker">
+      <span class="klabel">Everyone logs</span>
+      <h2>Build the Cadence source log 🗂 <span class="tag demo">★ 20 min · everyone works</span></h2>
+    </div>
+    <p class="lede">No lab widget yet - the scorer debuts in session 5. Today's artifact is the log itself, plus one deliberate encounter with an invented statistic under controlled conditions.</p>
+    <div class="steps">
+      <div class="step"><p><strong>List the 8 claims the engagement needs.</strong> Start from the tree: market size for enterprise note-taking, rival pricing, procurement cycle norms, retention benchmarks, seat-expansion patterns, security-review requirements, pricing-page positioning, willingness-to-pay signals. Adjust to your own tree's branches.</p></div>
+      <div class="step"><p><strong>Classify each claim BEFORE searching.</strong> Which source class should each come from - primary, reputable secondary, or vendor? Deciding first stops you from accepting whatever class shows up first.</p></div>
+      <div class="step"><p><strong>Run one AI coverage sweep.</strong> "Here are my 8 claims - what angles am I missing for an enterprise-tier go-to-market question?" Add the one suggestion that genuinely surprised you as claim 9.</p></div>
+      <div class="step"><p><strong>Source two claims for real.</strong> Any public source. Fill complete rows: claim, source with title and link, date accessed, your initials, confidence. Notice how long a real row takes - that is the honest price of a fact.</p></div>
+      <div class="step"><p><strong>Meet the invented statistic on purpose.</strong> Ask AI for a market-size figure WITHOUT any grounding or documents, then try to find its source. Follow the trail until it goes cold. That dead end, experienced once deliberately, is the session's most durable lesson.</p></div>
+      <div class="step"><p><strong>Write the vendor-claim label.</strong> One line you would put under a vendor-claimed number in a client deck - short enough for a footnote, clear enough that the client knows whose claim it is. Keep it; you will reuse it for years.</p></div>
+    </div>
+    <div class="callout tip">
+      <strong>✦ If you finish early</strong>
+      Take your b2 proposal draft and give every number in it a log row. Any number that cannot fill its row gets flagged or cut - you just ran your first citation audit, three sessions before b9 makes it a standing QA gate.
+    </div>
+  </section>
+
+  <!-- ============ EXERCISE ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Before next session</span>
+      <h2>Homework 📝 <span class="tag exercise">◐ 20 minutes</span></h2>
+    </div>
+    <ul>
+      <li><strong>Start a source log for one live piece of your own work</strong> - five rows minimum, real sources, your initials in every row. The log only becomes a habit when it holds work someone will actually read.</li>
+      <li><strong>Find one vendor-claimed number in the wild</strong> - a stat in a press release, a vendor benchmark, a "customers report 40% faster" - and write the label you would put under it in a client deck.</li>
+      <li><strong>Bring one interview or meeting transcript you may use (anonymized) to b4</strong> - next session turns raw inputs into findings and insights, and the synthesis works best on material you know.</li>
+    </ul>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · The lead-not-fact rule says an AI-supplied fact becomes usable in a deliverable when...</p>
+      <button class="qopt" type="button">A · it appears consistently across three separate AI conversations</button>
+      <button class="qopt" type="button">B · a human has seen its source with their own eyes - until then it is a lead</button>
+      <button class="qopt" type="button">C · the AI tool provides a citation link alongside it</button>
+      <p class="qwhy">Consistency across chats proves nothing - models converge on the same plausible shapes. And a citation is a lead to a source, not proof anyone opened it. The gate is a human seeing the source itself; only then does the claim get a log row and an owner.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · The source log's owner-initials column exists because...</p>
+      <button class="qopt" type="button">A · every fact reaching a client needs a named human accountable for having seen its source - the Deloitte-shaped lesson</button>
+      <button class="qopt" type="button">B · the firm needs to track who is doing the most research work</button>
+      <button class="qopt" type="button">C · clients require author names on all working documents</button>
+      <p class="qwhy">Deloitte Australia refunded and made headlines over fabricated references it attributed to generative AI use - production details nobody had verified end to end. Initials in the row make Rail 2 concrete: a specific human vouches for each fact, and the log shows exactly which ones nobody has vouched for yet.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">3 · The three source classes are primary, reputable secondary, and vendor/self-reported. The one that must be labeled in the deliverable itself is...</p>
+      <button class="qopt" type="button">A · primary - clients distrust academic papers</button>
+      <button class="qopt" type="button">B · reputable secondary - press coverage is always suspect</button>
+      <button class="qopt" type="button">C · vendor/self-reported - the claim may be true, but the client must see whose claim it is</button>
+      <p class="qwhy">"McKinsey claims ~30% time saved" is usable - labeled. Vendor numbers describe the vendor's best story about itself; the label moves the trust decision to the client, where it belongs. Estimates carry the same obligation.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ SOURCES COVERED ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Coverage, honestly</span>
+      <h2>What this session covered from the official universe</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Deloitte Australia incident (Oct 2025) - the liability anchor, retold in full</span><span class="note">fabricated references + a misattributed court quote, attributed to generative AI use later disclosed; partial refund; the headline as the real price</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Source-log discipline: claim, source, date, owner, confidence + three source classes</span><span class="note">field practice, labeled honestly - the working artifact this course adds on top of the incident record</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Deep-research technique (learn-ai-research-with-phoebe)</span><span class="note">pointer only: this session is the consulting discipline, that course is the machinery</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Vendor data-handling terms (OpenAI enterprise privacy; Anthropic commercial terms)</span><span class="note">restated operationally for research week; b8 owns the full drill with the lab's confidentiality gate</span></div>
+    </div>
+    <p>Certificates, videos, and graded assessments stay with the official providers - this course teaches the working core. Full source map in the repo's <em>materials/official-course-map.md</em>.</p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Consultant session 3 cheat sheet</h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The rule</b><span>An AI-supplied fact is a LEAD until a human has seen its source. Gate or bin - never the red shortcut.</span></div>
+      <div class="cheat-item"><b>Why models invent</b><span>They generate what a stat looks like, not what it is. Invented numbers are undetectable by inspection - only the source-check reveals the absence.</span></div>
+      <div class="cheat-item"><b>The invoice</b><span>Deloitte Australia, Oct 2025: fabricated references + a misattributed quote, attributed to genAI use later disclosed. Partial refund; headline was the price.</span></div>
+      <div class="cheat-item"><b>The log's columns</b><span>Claim · source (link/title/page) · date accessed · owner initials · confidence. No row, no fact.</span></div>
+      <div class="cheat-item"><b>Confidence values</b><span>Verified · vendor-claimed · estimate. The last two get a label in the deliverable itself.</span></div>
+      <div class="cheat-item"><b>Three source classes</b><span>Primary (filings, transcripts, papers) · reputable secondary (major press, outlet named) · vendor/self-reported (labeled).</span></div>
+      <div class="cheat-item"><b>AI's research jobs</b><span>Coverage sweeps ("what am I missing?"), summarizing documents YOU supply, drafting search strategies. Citations still get the log treatment.</span></div>
+      <div class="cheat-item"><b>Research-week Rail 1</b><span>Enterprise-tier tools only, anonymized even there: "a B2B SaaS note-taker at ~$20 ARPU" - the name adds nothing to the analysis.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Consultant session 3 of 10 · learn-ai-consulting-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b2-proposal-and-scoping.html">← Prev: Proposal and scoping</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="b4-analysis-copilot.html">Next: Analysis co-pilot →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
