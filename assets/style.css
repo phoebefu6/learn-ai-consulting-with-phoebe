@@ -2,6 +2,7 @@
    Accent: blueprint blue #1B3A6B · Ink: #1A2230 · Flagship: safety orange #8896A9 */
 
 :root {
+  --fg-text: #222B37;
   --indigo: #1B3A6B;
   --indigo-deep: #122A4F;
   --indigo-mid: #4A6B9C;
@@ -689,7 +690,7 @@ details.card:hover::after { opacity: 1; }
   cursor: pointer; font-family: inherit;
 }
 .lab-btn:hover { background: rgba(255,255,255,.14); }
-.lab-btn.primary { background: var(--amber); border-color: var(--amber); color: #26303D; }
+.lab-btn.primary { background: var(--amber); border-color: var(--amber); color: var(--fg-text); }
 .lab-btn.primary:hover { filter: brightness(1.07); }
 
 .lab-levers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; padding: 1rem; background: var(--indigo-50); }
